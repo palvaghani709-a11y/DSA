@@ -1,0 +1,12 @@
+#include<stdio.h>
+using namespace std;
+
+void change(int x) {
+    x = 100;  // only changes the copy
+}
+
+int main() {
+    int a = 5;
+    change(a);
+    printf("%d", a); // still prints 5
+}
